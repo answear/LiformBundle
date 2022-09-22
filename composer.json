@@ -15,7 +15,7 @@
     }
   },
   "require": {
-    "answear/liform": "^0.19.0",
+    "answear/liform": "^0.20",
     "symfony/dependency-injection": "^5.4|^6.0",
     "symfony/config": "^5.4|^6.0",
     "symfony/http-kernel": "^5.4|^6.0"
