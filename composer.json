@@ -1,5 +1,5 @@
 {
-  "name": "limenius/liform-bundle",
+  "name": "answear/liform-bundle",
   "description": "Bundle for Liform: Transform Symfony Forms into Json Schema",
   "type": "symfony-bundle",
   "license": "MIT",
@@ -15,7 +15,13 @@
     }
   },
   "require": {
-    "limenius/liform": "^0.17.0"
+    "answear/liform": "^0.18.0",
+    "symfony/dependency-injection": "^5.4",
+    "symfony/config": "^5.4",
+    "symfony/http-kernel": "^5.4"
   },
-  "minimum-stability": "stable"
+  "minimum-stability": "stable",
+  "replace": {
+    "limenius/liform-bundle": "*"
+  }
 }
