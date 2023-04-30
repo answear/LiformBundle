@@ -19,7 +19,9 @@ Feel free to clone it, run it, experiment, and copy the pieces you need to your 
 Open a console, navigate to your project directory and execute the
 following command to download the latest stable version of this bundle:
 
-    $ composer require limenius/liform-bundle
+```bash
+composer require answear/liform-bundle
+```
 
 This command requires you to have Composer installed globally, as explained
 in the *installation chapter* of the Composer documentation.
