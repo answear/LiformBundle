@@ -15,7 +15,7 @@
     }
   },
   "require": {
-    "limenius/liform": "dev-master",
+    "answear/liform": "dev-allow-symfony-7",
     "symfony/dependency-injection": "^6.0|^7.0",
     "symfony/config": "^6.0|^7.0",
     "symfony/http-kernel": "^6.0|^7.0"
