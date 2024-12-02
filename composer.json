@@ -15,7 +15,7 @@
     }
   },
   "require": {
-    "answear/liform": "^0.21.0",
+    "survos/liform": "^2.0",
     "symfony/dependency-injection": "^6.0|^7.0",
     "symfony/config": "^6.0|^7.0",
     "symfony/http-kernel": "^6.0|^7.0"
@@ -25,6 +25,7 @@
     "limenius/liform-bundle": "*"
   },
   "require-dev": {
+    "roave/security-advisories": "dev-latest",
     "phpstan/phpstan": "^1.8"
   }
 }
