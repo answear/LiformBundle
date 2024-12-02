@@ -6,8 +6,8 @@
 
     <services>
         <service id="Limenius\Liform\Transformer\AbstractTransformer" abstract="true">
-            <argument type="service" id="translator" />
-            <argument type="service" id="liform.guesser.validator" />
+            <argument key="$translator" type="service" id="translator" />
+            <argument key="$validatorGuesser" type="service" id="liform.guesser.validator" />
         </service>
 
         <service id="liform.transformer.integer" class="Limenius\Liform\Transformer\IntegerTransformer"
@@ -17,13 +17,13 @@
 
         <service id="liform.transformer.array" class="Limenius\Liform\Transformer\ArrayTransformer"
                  parent="Limenius\Liform\Transformer\AbstractTransformer">
-            <argument type="service" id="Limenius\Liform\Resolver" />
+            <argument key="$resolver" type="service" id="Limenius\Liform\Resolver" />
             <tag name="liform.transformer" form_type="collection"/>
         </service>
 
         <service id="liform.transformer.compound" class="Limenius\Liform\Transformer\CompoundTransformer"
                  parent="Limenius\Liform\Transformer\AbstractTransformer">
-            <argument type="service" id="Limenius\Liform\Resolver" />
+            <argument key="$resolver" type="service" id="Limenius\Liform\Resolver" />
             <tag name="liform.transformer" form_type="compound"/>
         </service>
 
@@ -57,4 +57,3 @@
     </services>
 
 </container>
-
